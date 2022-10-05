@@ -1,4 +1,5 @@
 <?php
+
 class Autor
 {
     private $apellidos;
