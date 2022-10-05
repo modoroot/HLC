@@ -1,27 +1,27 @@
 <?php
+include_once 'libro.php';
 class Ejemplar
 {
+    private Libro $libro;
     private $numEjemplar;
     private $precio;
-    private $libros;
 
-    public function __construct($numEjemplar, $precio)
+
+    public function __construct(Libro &$libro, $numEjemplar, $precio)
     {
+        $this->libro = $libro;
         $this->numEjemplar = $numEjemplar;
         $this->precio = $precio;
-        $this->libros = array();
+        if (isset($libro)) {
+            $this->libro->add_ejemplar($this);
+        }
     }
-
-    public function add_libro($libro)
+    public function get_numEjemplar()
     {
-        array_push($this->libros, $libro);
+        return $this->numEjemplar;
     }
-    public function remove_libros()
+    public function get_precio()
     {
-        $this->libros = NULL;
-    }
-    public function get_nombre()
-    {
-        return $this->nombre;
+        return $this->precio;
     }
 }
