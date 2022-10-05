@@ -1,6 +1,6 @@
 <?php
-class Ejemplar extends Libro
-{
+class Ejemplar
+{   
     private $numEjemplar;
     private $precio;
 
@@ -14,5 +14,3 @@ class Ejemplar extends Libro
     {
     }
 }
-$libro = new Libro($this->titulo = $titulo, $this->idioma = $idioma, $this->resumen = $resumen, $this->isbn = $isbn, $this->esNovedad = $esNovedad);
-$arrayLibro = (array) $libro;

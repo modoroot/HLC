@@ -11,6 +11,5 @@ class Autor
         $this->nombre = $nombre;
         $this->nacionalidad = $nacionalidad;
     }
+
 }
-$autor = new Autor($this->apellidos, $this->nombre, $this->nacionalidad);
-$arrayAutor = (array) $autor;
