@@ -1,14 +1,18 @@
 <?php
-class Autor
+class Ejemplar extends Libro
 {
-    public $idioma;
-    public $numEjemplar;
-    public $precio;
+    private $numEjemplar;
+    private $precio;
 
-    public function __construct($idioma, $numEjemplar, $precio)
+    public function __construct($numEjemplar, $precio)
     {
-        $this->idioma = $idioma;
         $this->numEjemplar = $numEjemplar;
         $this->precio = $precio;
     }
+
+    public function addLibro()
+    {
+    }
 }
+$libro = new Libro($this->titulo = $titulo, $this->idioma = $idioma, $this->resumen = $resumen, $this->isbn = $isbn, $this->esNovedad = $esNovedad);
+$arrayLibro = (array) $libro;

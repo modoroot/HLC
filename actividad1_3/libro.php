@@ -1,11 +1,11 @@
 <?php
 class Libro
 {
-    public $titulo;
-    public $idioma;
-    public $resumen;
-    public $isbn;
-    public $esNovedad;
+    private $titulo;
+    private $idioma;
+    private $resumen;
+    private $isbn;
+    private $esNovedad;
 
     public function __construct($titulo, $idioma, $resumen, $isbn, $esNovedad)
     {
@@ -16,3 +16,4 @@ class Libro
         $this->esNovedad = $esNovedad;
     }
 }
+

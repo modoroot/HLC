@@ -1,9 +1,9 @@
 <?php
 class Autor
 {
-    public $apellidos;
-    public $nombre;
-    public $nacionalidad;
+    private $apellidos;
+    private $nombre;
+    private $nacionalidad;
 
     public function __construct($apellidos, $nombre, $nacionalidad)
     {
@@ -12,3 +12,5 @@ class Autor
         $this->nacionalidad = $nacionalidad;
     }
 }
+$autor = new Autor($this->apellidos, $this->nombre, $this->nacionalidad);
+$arrayAutor = (array) $autor;
