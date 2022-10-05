@@ -1,5 +1,6 @@
 <?php
-class Libro{
+class Libro
+{
     public $titulo;
     public $idioma;
     public $resumen;
@@ -8,11 +9,10 @@ class Libro{
 
     public function __construct($titulo, $idioma, $resumen, $isbn, $esNovedad)
     {
-        $this -> titulo = $titulo;
-        $this -> idioma = $idioma;
-        $this -> resumen = $resumen;
-        $this -> isbn = $isbn;
-        $this -> esNovedad = $esNovedad;
+        $this->titulo = $titulo;
+        $this->idioma = $idioma;
+        $this->resumen = $resumen;
+        $this->isbn = $isbn;
+        $this->esNovedad = $esNovedad;
     }
-
 }
