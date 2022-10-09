@@ -1,5 +1,8 @@
-<?
+<?php
 abstract class Figura
 {
-    abstract protected function area($a);
+    public function __construct()
+    { 
+    }
+    abstract protected function area();
 }

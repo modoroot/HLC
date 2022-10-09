@@ -1,15 +1,19 @@
 <?php
 class Cuadrado extends Figura implements Dibujable, Rotable{
     private $lado;
-    public function area($lado){
-        return $this->lado*$this->lado."\n";
+    public function __construct($lado)
+    {
+        $this->lado = $lado;
+    }
+    public function area(){
+        echo $this->lado*$this->lado."\n";
     }
     public function rotable()
     {
-        return "cuadrado rotado\n";
+        echo "cuadrado rotado\n";
     }
     public function dibujable()
     {
-        return "cuadrado dibujado\n";
+        echo "cuadrado dibujado\n";
     }
 }
