@@ -1,4 +1,7 @@
 <?php
+/**
+ * Clase donde se calcula el área de un cuadradado
+ */
 class Cuadrado extends Figura implements Dibujable, Rotable{
     private $lado;
     public function __construct($lado)

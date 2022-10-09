@@ -4,6 +4,9 @@ include 'dibujable.php';
 include 'figura.php';
 include 'cuadrado.php';
 include 'circulo.php';
+/**
+ * Fichero donde se muestra el uso de la herencia, abstracción, y polimorfismo (interfaces)
+ */
 class Main{
     
 }
