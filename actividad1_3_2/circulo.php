@@ -13,6 +13,6 @@ class Circulo extends Figura implements Dibujable{
     }
     public function dibujable()
     {
-        echo "círculo dibujado\n";
+        echo "Círculo dibujado\n";
     }
 }
